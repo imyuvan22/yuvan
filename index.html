@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>JavaScript</title>
+</head>
+<script>
+function func()
+{
+var inp=String(document.getElementById("demo").value);
+var x=Number(inp);
+var message="";
+if(isNaN(x))
+{
+message="Not Numeric";
+}
+else
+{
+message="Numeric";
+}
+document.getElementById("result").innerHTML=message;
+}
+</script>
+<body>
+<h4>Please input a number.</h4>
+<input type="text" id="demo"></input>
+<button id="click" onclick="func()">Click Me!</button>
+<h4 id="result"></h4>
+</body>
+</html>
